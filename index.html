@@ -6,7 +6,7 @@
   <title>Clock Toggle</title>
   <meta property="og:title" content="O'Clock" />
   <meta property="og:description" content="Nobles' Clock App is a sleek and user-friendly digital clock that offers the ability to seamlessly switch between 12-hour and 24-hour time formats. Designed with simplicity and elegance in mind, this app ensures you always have the current time displayed in your preferred format with just a single tap." />
-  <meta property="og:image" content="https://aondonakato.github.io/CLOCK/log.jpg" />
+  <meta property="og:image" content="https://aondonakato.github.io/CLOCK/log.png" />
   <meta property="og:url" content="https://aondonakato.github.io/CLOCK/" />
   <meta property="og:type" content="website" />
   <link rel="stylesheet" href="style.css">
@@ -25,5 +25,12 @@
     <button id="toggle-format">Switch to 12-Hour</button>
   </div>
   <script src="script.js"></script>
+    <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('Service Worker registered successfully.'))
+        .catch(err => console.error('Service Worker registration failed:', err));
+    }
+  </script>
 </body>
 </html>
