@@ -1,0 +1,41 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .clock-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  .digital-clock #time {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
